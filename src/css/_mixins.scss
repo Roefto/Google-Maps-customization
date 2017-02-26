@@ -1,0 +1,35 @@
+$white: #fff;
+$black: #000;
+
+@mixin clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin vertical-align {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin center-align {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

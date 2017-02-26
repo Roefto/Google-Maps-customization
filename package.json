@@ -1,0 +1,20 @@
+{
+  "name": "GM",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "repository": "",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.2.0",
+    "bemto.pug": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "browser-sync": "^2.13.0"
+  },
+  "license": "ISC"
+}

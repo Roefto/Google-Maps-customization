@@ -1,0 +1,27 @@
+include ../node_modules/bemto.pug/bemto
+
+html
+    head
+        title Google Maps customization
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel='stylesheet', href='css/styles.css', type='text/css')
+
+    body
+        +b.map
+            +e.mask
+            +e#map.wrap
+            +b.marker-content.js-marker-content
+                +b.marker-info
+                    +e('span').bg-wrap
+                        +e.bg
+                    +e.arrow
+                    +e.dash-wrap
+                        +e.rb-dash.js-parallax-img
+                    +e.text Петровская ул., 51,<br>Таганрог, Ростовская обл.<br>347900
+
+        script(src='js/lib/jquery-3.1.0.min.js')
+        script(src='js/index.js')
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB26lJFkiOq_rbZ0sIQbduyDPptMywHn6k")
+
+
