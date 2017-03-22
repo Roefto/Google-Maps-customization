@@ -14,10 +14,7 @@
 .map {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  overflow: hidden; }
   .map__wrap {
     height: 145%;
     width: 100%;
@@ -34,6 +31,8 @@
     background: url(../images/map-mask.svg) top center no-repeat;
     background-size: cover;
     pointer-events: none;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 2; }
 
 .popup-info-substrate, .marker-info__bg-wrap, .poi-info-window::before {
@@ -89,8 +88,8 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    -webkit-transform: translateY(calc(-100% - 28px));
-            transform: translateY(calc(-100% - 28px)); }
+    top: -109px;
+    bottom: auto; }
   .marker-info__rb-dash {
     background: url("../images/rb-dash.png") top center no-repeat;
     background-size: cover;

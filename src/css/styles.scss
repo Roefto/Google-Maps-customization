@@ -6,7 +6,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  @include horizontal-align;
 
   &__wrap {
     height: 145%;
@@ -22,6 +21,7 @@
     background: url(../images/map-mask.svg) top center no-repeat;
     background-size: cover;
     pointer-events: none;
+    transform: scale(1.01);
     z-index: 2;
   }
 }
@@ -71,7 +71,8 @@
     width: 150px;
     @include absolute;
     margin: auto;
-    transform: translateY(calc(-100% - 28px));
+    top: -109px;
+    bottom: auto;
   }
 
   &__rb-dash {

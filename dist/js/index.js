@@ -38,7 +38,8 @@ var GM = {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: coordinates,
                 zoom: zoom,
-                disableDefaultUI: true
+                disableDefaultUI: true,
+                scrollwheel: false
             }),
 
             infowindow = new google.maps.InfoWindow({
